@@ -20,6 +20,7 @@ vendor.audio.offload.pcm.16bit.enable=true
 vendor.audio.offload.pcm.24bit.enable=true
 vendor.audio.playback.mch.downsample=true
 vendor.voice.playback.conc.disabled=true
+vendor.audio.rec.playback.conc.disabled=true
 vendor.audio.safx.pbe.enabled=true
 vendor.audio.tunnel.encode = false
 vendor.audio.use.sw.alac.decoder=true
