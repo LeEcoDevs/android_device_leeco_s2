@@ -190,6 +190,10 @@ on boot
     # Create vpp directory
     mkdir /persist/vpp 0770 media media
 
+    # perfd waits until the property is set to 1 and refuses to acquire
+    # locks and process hints until it doesn't exists or it is empty.
+    setprop sys.post_boot.parsed 1
+
 on post-fs
     # Wait qseecomd started
     wait_for_prop sys.listeners.registered true
