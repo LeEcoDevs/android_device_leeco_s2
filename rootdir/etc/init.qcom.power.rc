@@ -31,7 +31,7 @@ on boot
 
 on enable-low-power
     # Enable Low Memory Killer
-    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
+    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 0
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 81250
 
     # Disable thermal bcl hotplug to switch governor
