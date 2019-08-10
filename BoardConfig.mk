@@ -42,7 +42,7 @@ TARGET_USES_64_BIT_BINDER := true
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := MSM8952
+TARGET_BOOTLOADER_BOARD_NAME := MSM8976
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci earlyprintk loop.max_part=7
@@ -110,10 +110,6 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(DEVICE_PATH)/charger/images
 BACKLIGHT_PATH := "/sys/class/leds/lcd-backlight/brightness"
 BLINK_PATH := "/sys/class/leds/red/blink"
-WITH_LINEAGE_CHARGER := false
-
-# CNE
-BOARD_USES_QCNE := true
 
 # CSVT
 TARGET_USES_CSVT := true
@@ -223,7 +219,7 @@ TARGET_USES_OLD_MNC_FORMAT := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Sepolicy
-include device/qcom/sepolicy-legacy/sepolicy.mk
+include device/qcom/sepolicy/Android.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Shims

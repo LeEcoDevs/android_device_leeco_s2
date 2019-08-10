@@ -13,16 +13,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# Check for target product
+ifeq (pa_s2,$(TARGET_PRODUCT))
+
+# Include Paranoid Android common configuration
+TARGET_BOOT_ANIMATION_RES := 1080
+
+TARGET_USES_AOSP := false
+TARGET_USES_QCOM_BSP := false
+
+include device/qcom/common/common.mk
+include vendor/pa/main.mk
 
 # Inherit device configuration
 $(call inherit-product, device/leeco/s2/full_s2.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := s2
-PRODUCT_NAME := lineage_s2
+PRODUCT_NAME := pa_s2
 PRODUCT_BRAND := LeEco
 PRODUCT_MANUFACTURER := LeMobile
 
@@ -39,3 +47,5 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
 # Release name
 PRODUCT_RELEASE_NAME := s2
+
+endif

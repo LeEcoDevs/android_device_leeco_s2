@@ -24,7 +24,7 @@ $(call inherit-product, vendor/leeco/s2/s2-vendor.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-pa
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -390,10 +390,6 @@ PRODUCT_COPY_FILES += \
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
-
-# Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2016-12-01
 
 # VR
 PRODUCT_PACKAGES += \
