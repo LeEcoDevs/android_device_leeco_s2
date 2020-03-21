@@ -1473,6 +1473,11 @@
         <path name="speaker" />
     </path>
 
+    <!-- for use with leeco audio hal -->
+    <path name="voip-smartpa">
+        <path name="smartpa" />
+    </path>
+
     <path name="wsa-speaker">
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RDAC2 MUX" value="RX1" />
@@ -1600,6 +1605,11 @@
 
     <path name="voice-speaker">
         <path name="speaker" />
+    </path>
+
+    <!-- for use with leeco audio hal -->
+    <path name="voice-smartpa">
+        <path name="smartpa" />
     </path>
 
     <path name="wsa-voice-speaker">

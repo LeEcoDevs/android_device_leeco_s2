@@ -166,6 +166,7 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="smartpa-and-bt-sco" />
         <device name="SND_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="smartpa-and-bt-sco-wb" />
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="smartpa" />
+        <device name="SND_DEVICE_OUT_VOIP_SPEAKER" backend="smartpa" />
     </backend_names>
     <tz_names>
         <device name="SND_DEVICE_OUT_SPEAKER" spkr_1_tz_name="wsa881x.0f" spkr_2_tz_name=""/>
