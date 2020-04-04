@@ -527,6 +527,10 @@
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 
+    <path name="compress-offload-playback3 smartpa">
+        <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia10" value="1" />
+    </path>
+
     <path name="compress-offload-playback3 bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia10" value="1" />
     </path>
@@ -557,6 +561,10 @@
 
     <path name="compress-offload-playback4">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia11" value="1" />
+    </path>
+
+    <path name="compress-offload-playback4 smartpa">
+        <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia11" value="1" />
     </path>
 
     <path name="compress-offload-playback4 bt-sco">
@@ -591,6 +599,10 @@
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia12" value="1" />
     </path>
 
+    <path name="compress-offload-playback5 smartpa">
+        <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia12" value="1" />
+    </path>
+
     <path name="compress-offload-playback5 bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia12" value="1" />
     </path>
@@ -623,6 +635,10 @@
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia13" value="1" />
     </path>
 
+    <path name="compress-offload-playback6 smartpa">
+        <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia13" value="1" />
+    </path>
+
     <path name="compress-offload-playback6 bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia13" value="1" />
     </path>
@@ -653,6 +669,10 @@
 
     <path name="compress-offload-playback7">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia14" value="1" />
+    </path>
+
+    <path name="compress-offload-playback7 smartpa">
+        <ctl name="QUIN_MI2S_RX Audio Mixer MultiMedia14" value="1" />
     </path>
 
     <path name="compress-offload-playback7 bt-sco">
@@ -973,7 +993,7 @@
 
     <!-- for use with leeco audio hal -->
     <path name="hfp-sco-speaker">
-        <path name="hfp-sco smartpa" />       
+        <path name="hfp-sco smartpa" />
     </path>
 
     <path name="hfp-sco-wb">
