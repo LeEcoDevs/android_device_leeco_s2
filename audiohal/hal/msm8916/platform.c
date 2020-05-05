@@ -1077,6 +1077,9 @@ void platform_set_echo_reference(struct audio_device *adev, bool enable,
                  (snd_device == SND_DEVICE_OUT_SPEAKER_PROTECTED_VBAT))
             strlcpy(my_data->ec_ref_mixer_path, "vbat-speaker echo-reference",
                 sizeof(my_data->ec_ref_mixer_path));
+        else if (snd_device == SND_DEVICE_OUT_VOICE_SPEAKER)
+              strlcpy(my_data->ec_ref_mixer_path, "echo-reference smartpa",
+                sizeof(my_data->ec_ref_mixer_path));
         else
             strlcpy(my_data->ec_ref_mixer_path, "echo-reference",
                 sizeof(my_data->ec_ref_mixer_path));
